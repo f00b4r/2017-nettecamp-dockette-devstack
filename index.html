@@ -37,19 +37,14 @@
 		<section>
 			<h2>Dockette / Devstack</h2>
 			<h3>Milan Šulc</h3>
-			<p>
-				<a href="https://github.com/f3l1x">#f3l1x</a> / <a href="https://twitter.com/xf3l1x">@xf3l1x</a>
-			</p>
+			<img src="https://avatars1.githubusercontent.com/u/538058?v=4&s=200">
 		</section>
 
 		<section>
 			<h1>Docker</h1>
 			<ul>
 				<li>container platform</li>
-				<li>cross platform</li>
 				<li>easy developing</li>
-				<li>easy scaling</li>
-				<li>easy sharing</li>
 			</ul>
 		</section>
 
@@ -80,24 +75,93 @@
 		<section>
 			<h2>PHP</h2>
 			<ul>
-				<li>7.1</li>
-				<li>5.6</li>
+				<li>7.1 / 5.6</li>
 				<li>FPM</li>
 				<li>composer</li>
 				<li>hirak/prestissimo</li>
 				<li>blackfire</li>
+				<li>phpmailer</li>
 			</ul>
 		</section>
 
 		<section>
+			<code>
+				<pre>
+Control your LAMP devstack.
+
+Environment:
+    Version: 1.3
+    User: dfx
+    Prefix: devstack-[container]
+    Configuration: ~/docker-compose.yml
+
+Commands:
+
+    -h | help   Display this help and exit.
+
+  Devstack: 
+      s | up | start            Start services
+      sl | start-logs           Start and follow logs
+      r | restart               Restart services
+      rl | restart-logs         Restart and follow logs
+      b | build                 Build services
+      ru | reup                 Build & Start
+      d | destroy               Destroy services
+      ps | list                 List services in devstack
+      u | upgrade               Upgrade devstack images
+
+  Services:
+      rb | rebuild [service]            Rebuild service
+      e | exec [service] [command]      Exec command in [service]
+      g | go [service] [command]        Attach to [service]
+      gu | go-user [service] [command]  Attach as predefined user
+
+				</pre>
+			</code>
+		</section>		
+
+		<section>
+			<h2>Demo</h2>
+			<p>Showtime!</p>
+		</section>
+
+		<section>
 			<h2>Hosts</h2>
-			<ul>
-				<li>local.dev</li>
-				<li>local.dev56</li>
-				<li>local.dev7</li>
-				<li>mariadb</li>
-				<li>postgres</li>
-			</ul>
+			<table>
+				<tr>
+					<td>IP</td>
+					<td>Service</td>
+				</tr>
+				<tr>
+					<td>127.0.0.1</td>
+					<td>local.dev</td>
+				</tr>
+				<tr>
+					<td>127.0.0.1</td>
+					<td>local.dev56</td>
+				</tr>
+				<tr>
+					<td>172.10.10.20</td>
+					<td>mariadb</td>
+				</tr>
+				<tr>
+					<td>172.10.10.21</td>
+					<td>postgres</td>
+				</tr>
+			</table>
+		</section>
+
+		<section>
+			<h2>Q / A?</h2>
+		</section>
+
+		<section>
+			<h2>Thank you</h2>
+			<hr>
+			<h3>Milan Šulc</h3>
+			<p><a href="https://github.com/f3l1x">github.com/f3l1x</a></p>
+			<p><a href="https://twitter.com/xf3l1x">twitter.com/xf3l1x</a></p>
+			<p><a href="https://f3l1x.io">f3l1x.io</a></p>
 		</section>
 	</div>
 </div>
